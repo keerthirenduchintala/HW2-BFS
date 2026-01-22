@@ -70,13 +70,7 @@ def test_bfs():
             assert result[i + 1] in test_graph.graph[result[i]]
     
     # Test disconnected nodes return None
-    disconnected_graph = Graph()
-    disconnected_graph.graph = {
-        'A': ['B'],
-        'B': ['A'],
-        'C': ['D'],
-        'D': ['C']
-    }
+    disconnected_graph = Graph("data/disconnected.adjlist")
     result_none = disconnected_graph.bfs('A', 'C')
     assert result_none is None
     
