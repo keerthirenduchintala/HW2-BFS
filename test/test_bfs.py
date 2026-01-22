@@ -12,7 +12,7 @@ def test_bfs_traversal():
     the right number of nodes, in the right order, etc.)
     """
     # Load the graph
-    test_graph = Graph('/Users/krendu/Desktop/Classes/Winter/Algorithms/HW2-BFS/data/tiny_network.adjlist') 
+    test_graph = Graph('data/tiny_network.adjlist') 
     
     # Run BFS traversal
     start_node = list(test_graph.graph.keys())[0]
@@ -47,7 +47,7 @@ def test_bfs():
     which should return None. 
     """
    # Load the graph
-    test_graph = Graph('/Users/krendu/Desktop/Classes/Winter/Algorithms/HW2-BFS/data/citation_network.adjlist')  
+    test_graph = Graph('data/citation_network.adjlist')  
     
     # Get two nodes
     nodes = list(test_graph.graph.keys())
