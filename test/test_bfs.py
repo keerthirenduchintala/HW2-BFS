@@ -15,7 +15,7 @@ def test_bfs_traversal():
     test_graph = Graph('data/tiny_network.adjlist') 
     
     # Run BFS traversal
-    start_node = list(test_graph.graph.keys())[0]
+    start_node = list(test_graph.graph.nodes())[0]
     result = test_graph.bfs(start_node)
     
     # Assert first node is start node
@@ -50,7 +50,7 @@ def test_bfs():
     test_graph = Graph('data/citation_network.adjlist')  
     
     # Get two nodes
-    nodes = list(test_graph.graph.keys())
+    nodes = list(test_graph.graph.nodes())
     start = nodes[0]
     end = nodes[5]
     
