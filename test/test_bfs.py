@@ -24,9 +24,8 @@ def test_bfs_traversal():
     # Assert all nodes are traversed
     assert len(result) == len(test_graph.graph)
     
-    # Test edge case: empty graph raises ValueError
-    empty_graph = Graph()
-    empty_graph.graph = {}
+    # Test edge case: empty graph raises ValueErrors
+    empty_graph = Graph("data/empty_graph.adjlist")
     with pytest.raises(ValueError):
         empty_graph.bfs('A')
     
