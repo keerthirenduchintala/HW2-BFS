@@ -28,7 +28,9 @@ In test/test_bfs.py:
 
 ## Software Development Assessment
 
-BFS(Breadth-First Search) 
+BFS(Breadth-First Search)
+
+The Graph class contains the method bfs that implements breadth-first search on a graph, supporting both full traversal and shortest-path finding depending on whether an end node is specified. It uses a queue to explore nodes and neighboring nodes and a dictionary to track each node's predecessor, enabling path reconstruction when a end node is found. 
 
 # Getting Started
 To get started you will need to fork this repository onto your own github. You will then work on the code base from your own repo and make changes to it in the form of commits. 
